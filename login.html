@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login Page</title>
+    <title>Login</title>
 </head>
 <body>
 
@@ -29,8 +29,7 @@
             let savedPassword = localStorage.getItem("password");
 
             if (email === savedEmail && password === savedPassword) {
-                document.getElementById("message").innerHTML = "Login Successful";
-
+                alert("Login Successful");
                 window.location.href = "welcome.html";
             } else {
                 document.getElementById("message").innerHTML = "Invalid email or password";

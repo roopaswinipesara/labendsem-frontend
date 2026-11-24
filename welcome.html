@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome Page</title>
+</head>
+<body>
+
+    <h2 id="welcome"></h2>
+
+    <button onclick="logout()">Logout</button>
+
+    <script>
+        let name = localStorage.getItem("name");
+
+        document.getElementById("welcome").innerHTML = "Welcome " + name;
+
+        function logout() {
+            window.location.href = "login.html";
+        }
+    </script>
+
+</body>
+</html>
